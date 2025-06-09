@@ -1,0 +1,712 @@
+/* src/styles/storyverse.css */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lora:wght@400;700&display=swap');
+
+/* Header */
+.header {
+  background-color: #FFFDD0;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #FFD700; /* Gold border */
+}
+
+.header-logo {
+  font-family: 'Playfair Display', serif;
+  color: #8B0000; /* Maroon */
+  font-size: 2em;
+}
+
+.header-tagline {
+  font-family: 'Lora', serif;
+  color: #8B0000;
+  font-size: 0.9em;
+}
+
+.header-user {
+  font-family: 'Lora', serif;
+  color: #8B0000;
+  font-size: 1em;
+}
+
+.header-user .crown {
+  color: #FFD700; /* Gold */
+  margin-left: 5px;
+}
+
+/* Main Content */
+.main-content {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  color: #8B0000;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* Story Pack Section */
+.story-pack {
+  background-color: #FFE6E6; /* Light pink */
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.story-pack-title {
+  font-family: 'Playfair Display', serif;
+  color: #8B0000;
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.story-pack-title .icon {
+  margin-right: 10px;
+}
+
+.story-pack-description {
+  font-family: 'Lora', serif;
+  color: #333;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.story-pack-list {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.story-pack-list li {
+  font-family: 'Lora', serif;
+  color: #333;
+  font-size: 0.9em;
+  margin: 5px 0;
+  padding-left: 20px;
+  position: relative;
+}
+
+.story-pack-list li::before {
+  content: '•';
+  color: #8B0000;
+  position: absolute;
+  left: 0;
+}
+
+.btn-buy {
+  background-color: #8B0000;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Lora', serif;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.btn-buy .icon {
+  margin-right: 10px;
+}
+
+.btn-buy:hover {
+  background-color: #6B0000;
+}
+
+/* Invite Friends Section */
+.invite-friends {
+  background-color: #FFFDD0;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.invite-friends-title {
+  font-family: 'Playfair Display', serif;
+  color: #8B0000;
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.invite-friends-title .icon {
+  margin-right: 10px;
+}
+
+.invite-friends-description {
+  font-family: 'Lora', serif;
+  color: #8B0000;
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+.btn-referral {
+  background-color: #FFD700;
+  color: #8B0000;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Lora', serif;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 300px;
+  margin: 10px auto;
+}
+
+.btn-referral .icon {
+  margin-right: 10px;
+}
+
+.btn-referral:hover {
+  background-color: #E6C200;
+}
+
+.btn-simulate {
+  background-color: #28A745;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Lora', serif;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 300px;
+  margin: 10px auto;
+}
+
+.btn-simulate .icon {
+  margin-right: 10px;
+}
+
+.btn-simulate:hover {
+  background-color: #218838;
+}
+
+/* Influencer Spotlight Section */
+.spotlight {
+  background-color: #FFFDD0;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.spotlight-title {
+  font-family: 'Playfair Display', serif;
+  color: #8B0000;
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.spotlight-title .icon {
+  margin-right: 10px;
+  color: #FFD700;
+}
+
+.spotlight-description {
+  font-family: 'Lora', serif;
+  color: #8B0000;
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+.influencer-card {
+  display: flex;
+  align-items: center;
+  background-color: #FFFDD0;
+  border: 2px solid #FFD700;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.influencer-avatar {
+  background-color: #8B0000;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Lora', serif;
+  font-size: 1.5em;
+  margin-right: 15px;
+}
+
+.influencer-info {
+  flex: 1;
+}
+
+.influencer-name {
+  font-family: 'Lora', serif;
+  color: #333;
+  font-size: 1.1em;
+}
+
+.influencer-referrals {
+  font-family: 'Lora', serif;
+  color: #333;
+  font-size: 0.9em;
+  display: flex;
+  align-items: center;
+}
+
+.influencer-referrals .icon {
+  margin-right: 5px;
+}
+.rank-badge {
+  background-color: #FFD700;
+  color: #333;
+  padding: 6px 12px; /* Slightly larger padding for better readability */
+  border-radius: 14px; /* Slightly larger border-radius for a softer look */
+  font-family: 'Lora', serif;
+  font-size: 0.9em; /* Base font size increased for better readability */
+  margin-left: 12px; /* Slightly more spacing */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease; /* Add hover effect for interactivity */
+}
+
+/* Specific badge colors */
+.rank-badge.silver {
+  background-color: #C0C0C0;
+}
+
+.rank-badge.bronze {
+  background-color: #CD7F32;
+}
+
+/* Hover effect for larger screens (non-touch devices) */
+@media (hover: hover) and (pointer: fine) {
+  .rank-badge:hover {
+    transform: scale(1.1); /* Slight scale-up on hover */
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .influencer-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 12px; /* Adjust padding for tablets */
+  }
+
+  .influencer-avatar {
+    margin: 0 auto 12px;
+    width: 45px; /* Slightly smaller avatar on tablets */
+    height: 45px;
+    font-size: 1.3em;
+  }
+
+  .influencer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .influencer-name {
+    font-size: 1em; /* Slightly smaller font size */
+  }
+
+  .influencer-referrals {
+    font-size: 0.85em; /* Adjust font size for readability */
+    flex-wrap: wrap; /* Allow wrapping if needed */
+    justify-content: center;
+  }
+
+  .rank-badge {
+    margin-left: 0;
+    margin-top: 8px; /* More vertical spacing */
+    padding: 5px 10px; /* Slightly smaller padding */
+    font-size: 0.85em; /* Adjust font size */
+    border-radius: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .influencer-card {
+    padding: 10px; /* Further reduced padding for mobile */
+  }
+
+  .influencer-avatar {
+    width: 40px; /* Smaller avatar on mobile */
+    height: 40px;
+    font-size: 1.2em;
+  }
+
+  .influencer-name {
+    font-size: 0.9em;
+  }
+
+  .influencer-referrals {
+    font-size: 0.8em;
+    flex-direction: column; /* Stack elements vertically on very small screens */
+    align-items: center;
+  }
+
+  .rank-badge {
+    margin-top: 6px;
+    padding: 4px 8px; /* Smaller padding for mobile */
+    font-size: 0.75em; /* Smaller font size for mobile */
+    border-radius: 10px; /* Smaller border-radius */
+    min-width: 60px; /* Ensure badge is wide enough to be readable */
+    text-align: center;
+  }
+}
+/* Footer */
+.footer {
+  background-color: #8B0000;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.footer-tagline {
+  font-family: 'Lora', serif;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
+.footer-attribution {
+  font-family: 'Lora', serif;
+  font-size: 0.8em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-logo {
+    font-size: 1.5em;
+  }
+
+  .header-tagline {
+    font-size: 0.8em;
+  }
+
+  .header-user {
+    font-size: 0.9em;
+    margin-top: 10px;
+  }
+
+  .section-title {
+    font-size: 1.5em;
+  }
+
+  .story-pack-title,
+  .invite-friends-title,
+  .spotlight-title {
+    font-size: 1.2em;
+  }
+
+  .btn-buy,
+  .btn-referral,
+  .btn-simulate {
+    padding: 10px 20px;
+    font-size: 0.9em;
+  }
+
+  .influencer-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .influencer-avatar {
+    margin: 0 auto 10px;
+  }
+
+  .influencer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rank-badge {
+    margin-left: 0;
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-logo {
+    font-size: 1.2em;
+  }
+
+  .header-tagline {
+    font-size: 0.7em;
+  }
+
+  .header-user {
+    font-size: 0.8em;
+  }
+
+  .section-title {
+    font-size: 1.2em;
+  }
+
+  .story-pack,
+  .invite-friends,
+  .spotlight {
+    padding: 15px;
+  }
+
+  .btn-buy,
+  .btn-referral,
+  .btn-simulate {
+    padding: 8px 16px;
+    font-size: 0.8em;
+  }
+}
+/* Payment Confirmation Message */
+.payment-message {
+  background-color: #28A745; /* Green background for success */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: 'Lora', serif;
+  font-size: 1em;
+}
+
+.payment-message p {
+  margin: 0;
+}
+
+/* Adjust for failed payment */
+.payment-message.failed {
+  background-color: #DC3545; /* Red background for failure */
+}
+
+/* Story Pack Unlocked Message */
+.unlocked-message {
+  font-family: 'Lora', serif;
+  color: #28A745; /* Green text */
+  font-size: 1em;
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .payment-message {
+    padding: 8px 16px;
+    font-size: 0.9em;
+  }
+
+  .unlocked-message {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .payment-message {
+    padding: 6px 12px;
+    font-size: 0.8em;
+  }
+
+  .unlocked-message {
+    font-size: 0.8em;
+  }
+}
+/* Referral Share Section */
+.referral-share {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.referral-share p {
+  font-family: 'Lora', serif;
+  color: #333;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.share-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn-share {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Lora', serif;
+  font-size: 0.9em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.btn-share .icon {
+  margin-right: 5px;
+}
+
+.btn-twitter {
+  background-color: #1DA1F2; /* Twitter blue */
+  color: white;
+}
+
+.btn-twitter:hover {
+  background-color: #0d8bf0;
+}
+
+.btn-whatsapp {
+  background-color: #25D366; /* WhatsApp green */
+  color: white;
+}
+
+.btn-whatsapp:hover {
+  background-color: #20c058;
+}
+
+.btn-email {
+  background-color: #FFD700; /* Gold */
+  color: #8B0000;
+}
+
+.btn-email:hover {
+  background-color: #E6C200;
+}
+
+.raffle-tickets {
+  font-family: 'Lora', serif;
+  color: #8B0000;
+  font-size: 1em;
+  margin-top: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .referral-share p {
+    font-size: 0.9em;
+  }
+
+  .btn-share {
+    padding: 6px 12px;
+    font-size: 0.85em;
+  }
+
+  .raffle-tickets {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .referral-share p {
+    font-size: 0.8em;
+  }
+
+  .btn-share {
+    padding: 5px 10px;
+    font-size: 0.8em;
+  }
+
+  .share-buttons {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .raffle-tickets {
+    font-size: 0.8em;
+  }
+}
+.spotlight-link {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.btn-spotlight {
+  background-color: #FFD700; /* Gold */
+  color: #8B0000;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Lora', serif;
+  font-size: 1em;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.btn-spotlight .icon {
+  margin-right: 10px;
+}
+
+.btn-spotlight:hover {
+  background-color: #E6C200;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .btn-spotlight {
+    padding: 10px 20px;
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn-spotlight {
+    padding: 8px 16px;
+    font-size: 0.8em;
+  }
+}
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation to sections */
+.story-pack,
+.invite-friends,
+.spotlight,
+.spotlight-link {
+  animation: fadeIn 0.5s ease-in-out;
+}
