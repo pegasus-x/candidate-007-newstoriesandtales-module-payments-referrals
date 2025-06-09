@@ -2,7 +2,7 @@
 
 **NewStoriesAndTales.com** is a narrative-driven platform empowering creators to share short stories, serialized fiction, and community lore. This repository implements **Module 6 (Payments Integration)** and **Module 8 (Referral & Influencer Spotlight)** as part of the **Contract Web Developer Tech Assessment** for **Alatree Ventures**.
 
-🌐 **Live Site:** [newstoriesandtales-007.netlify.app](https://newstoriesandtales-007.netlify.app)
+🌐 **Live Site:** https://newstalesandstories-007.netlify.app/
 
 ---
 
