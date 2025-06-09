@@ -1,112 +1,134 @@
-NewStoriesAndTales - Tech Assessment for Alatree Ventures
-Overview
-NewStoriesAndTales.com is a narrative-driven platform where creators share short stories, serialized fiction, and community lore, emphasizing creative expression, engagement, and discovery. This project implements Module 6 (Payments Integration) and Module 8 (Referral & Influencer Spotlight) as part of the Contract Web Developer Tech Assessment for Alatree Ventures.
-Features
+# ✨ NewStoriesAndTales – Tech Assessment for Alatree Ventures
 
-Payments Integration (Module 6):
-Implements a mock Stripe Checkout + Connect flow to purchase a "Story Pack" bundle for €5.00.
-POSTs to /api/create-checkout-session and redirects to a mock checkout URL.
-Displays "Purchase successful!" or "Payment failed. Please try again." based on the session ID.
-Shows a confirmation message on the dashboard and unlocks the Story Pack.
+**NewStoriesAndTales.com** is a narrative-driven platform empowering creators to share short stories, serialized fiction, and community lore. This repository implements **Module 6 (Payments Integration)** and **Module 8 (Referral & Influencer Spotlight)** as part of the **Contract Web Developer Tech Assessment** for **Alatree Ventures**.
 
+🌐 **Live Site:** [newstoriesandtales-007.netlify.app](https://newstoriesandtales-007.netlify.app)
 
-Referral & Influencer Spotlight (Module 8):
-Referral Link Generator: Allows users to generate a referral link and share it via X, WhatsApp, or email.
-Influencer Spotlight: A dedicated /spotlight page displaying top referrers with avatars, referral counts, and rank badges (Gold, Silver, Bronze).
-Referral Signup: Simulates a referral signup, awards raffle tickets, and displays "You earned a raffle ticket for referring a friend!".
+---
 
+## 🚀 Features
 
-Styling: Adheres to the Storyverse brand guidelines:
-Warm, welcoming layouts with a cream background (#FFFDD0).
-Primary Maroon (#8B0000), Accent Gold (#FFD700), and neutral colors.
-Typography: Playfair Display for headlines, Lora for body text.
-Soft-rounded content cards with fade-in animations.
+### 💳 Payments Integration (Module 6)
+- Implements a **mock Stripe Checkout + Connect** flow.
+- Purchases a "Story Pack" for **€5.00** via:
+  - `POST /api/create-checkout-session`
+  - Redirects to a mock Stripe URL.
+- Displays:
+  - ✅ **"Purchase successful!"**
+  - ❌ **"Payment failed. Please try again."**
+- Unlocks the **Story Pack** in the user dashboard.
 
+### 🧑‍🤝‍🧑 Referral & Influencer Spotlight (Module 8)
+- **Referral Link Generator**: Share via X (Twitter), WhatsApp, or Email.
+- **Influencer Spotlight Page** `/spotlight`:
+  - Shows top referrers with avatars.
+  - Displays **rank badges**: 🥇 Gold, 🥈 Silver, 🥉 Bronze.
+- **Referral Signup Simulation**:
+  - Awards **raffle tickets**.
+  - Message: _"You earned a raffle ticket for referring a friend!"_
 
+---
 
-Project Structure
+## 🎨 Styling
+
+- 🌼 **Brand Theme:**
+  - Background: `#FFFDD0` (Cream)
+  - Primary: `#8B0000` (Maroon)
+  - Accent: `#FFD700` (Gold)
+- 🖋️ **Typography:**
+  - Headlines: _Playfair Display_
+  - Body: _Lora_
+- 💫 UI Elements:
+  - Rounded content cards
+  - Smooth **fade-in animations**
+
+---
+
+## 🧱 Project Structure
+
 newstoriesandtales/
 ├── src/
-│   ├── components/
-│   │   ├── InfluencerCard.jsx
-│   │   ├── PaymentButton.jsx
-│   │   ├── ReferralButton.jsx
-│   ├── pages/
-│   │   ├── Dashboard.jsx
-│   │   ├── PaymentStatus.jsx
-│   │   ├── ReferralHandler.jsx
-│   │   ├── Spotlight.jsx
-│   ├── styles/
-│   │   ├── global.css
-│   │   ├── storyverse.css
-│   ├── api.js
-│   ├── App.jsx
-│   ├── main.jsx
+│ ├── components/
+│ │ ├── InfluencerCard.jsx
+│ │ ├── PaymentButton.jsx
+│ │ ├── ReferralButton.jsx
+│ ├── pages/
+│ │ ├── Dashboard.jsx
+│ │ ├── PaymentStatus.jsx
+│ │ ├── ReferralHandler.jsx
+│ │ ├── Spotlight.jsx
+│ ├── styles/
+│ │ ├── global.css
+│ │ ├── storyverse.css
+│ ├── api.js
+│ ├── App.jsx
+│ ├── main.jsx
 ├── public/
-│   ├── index.html
+│ ├── index.html
 ├── package.json
 ├── vite.config.js
-├── .gitignore
+├── .gitignore  
 
+---
 
-src/styles/storyverse.css: Contains all styling for the app, including Storyverse brand guidelines.
-src/api.js: Mock API endpoints for payments and referrals.
+## 🛠️ Setup Instructions
 
-Setup Instructions
-To run this project locally, follow these steps:
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/pegasus-x/candidate-007-newstoriesandtales-module-payments-referrals.git
+   cd newstoriesandtales
+2. **Install Dependencies**
+    ``` bash
+    npm install
+3. **Run the App Locally**
+     ``` bash
+     npm run dev
+4. **View on Browser**
+    http://localhost:5173
+5. **Build for Production**
+6. npm run build 
 
-Clone the Repository:
-git clone https://github.com/pegasus-x/candidate-007-newstoriesandtales-module-payments-referrals.git
-cd newstoriesandtales
+🚀 Deployment
+🟢 Deployed on Netlify
+🔗https://newstalesandstories-007.netlify.app/
 
+Deployment Steps:
 
-Install Dependencies:
-npm install
+Connected GitHub repo to Netlify
 
+Build Command: npm run build
 
-Run the Development Server:
-npm run dev
+Publish Directory: dist/
 
-Open http://localhost:5173 in your browser to view the app.
+Automatic deployment from main branch
 
-Build for Production:
-npm run build
+🧪 Known Issues
+⚠️ Minified React Error #130
 
-The production-ready files will be in the dist/ folder.
+Appears only in development.
 
+Message: "Element type is invalid..."
 
-Deployment
-The app is deployed on Netlify, with the live staging URL: https://newstoriesandtales-007.netlify.app
-Deployment Steps
+✅ Does not affect functionality.
 
-Deploy to Netlify:
+Likely due to dev tooling or module resolution.
 
-Connected the GitHub repository to Netlify.
-Configured build settings:
-Build command: npm run build
-Publish directory: dist
+✅ Deployed version functions correctly.
 
+🧰 Tech Stack
+Tool/Library	Version	Purpose
+⚛️ React	18.3.1	Frontend framework
+🧭 React Router	6.26.1	Client-side routing
+⚡ Vite	Latest	Development/build tool
+🎨 CSS	Custom	Theming with Storyverse brand
+📡 Axios	Latest	API request handling
+🌍 react-router-dom	Latest	Routing helpers
+        
+📄 License
+This project is developed for a technical assessment. For educational or evaluation purposes only.
 
-Deployed the site, resulting in the live URL above.
+🙌 Acknowledgements
+Special thanks to Alatree Ventures for the opportunity.
 
-
-
-Notes
-
-Minified React Error #130:
-A "Minified React Error #130" appears in the console during development, indicating an "Element type is invalid" issue.
-This error does not impact the core functionality of the app (payment flow, referral system, and UI rendering work as expected).
-The deployed version on Netlify functions correctly, and the error is likely related to module resolution or React DevTools in the development environment.
-
-
-
-Tech Stack
-
-Framework: React (v18.3.1)
-Routing: React Router (v6.26.1)
-Build Tool: Vite
-Styling: Custom CSS with Storyverse brand guidelines
-Dependencies:
-axios for mock API requests
-react-router-dom for client-side routing
-
+Brand theme inspired by the Storyverse identity.
+Developed with ❤️ and React
